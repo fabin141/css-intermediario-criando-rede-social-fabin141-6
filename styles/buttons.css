@@ -10,12 +10,13 @@
 }
 
 .button_primary{
-    background-color: var(--color-grey-1);
-    border-color: var(--color-grey-1);
+    background-color: var(--color-grey-3);
+    border-color: var(--color-grey-3);
+    color: var(--color-grey-2);
 }
 
 .button_primary:hover{
-    background-color: var(--color-grey-2);
+    background-color: var(--color-grey-1);
     color: var(--color-white-fixed);
     border-color: var(--color-grey-2);
 }
@@ -39,8 +40,8 @@
 }
 
 .button_white:hover{
-    background-color: var(--color-gray-3);
-    border-color: var(--color-gray-3);
+    background-color: var(--color-blue);
+    border-color: var(--color-blue);
 }
 
 .button_outline{
@@ -53,20 +54,20 @@
 }
 
 .button_outline:hover{
-    border-color: var(--color-grey-2);
-    background-color: var(--color-gray-4);
-    color: var(--color-grey-2);
+    border-color: var(--color-blue);
+    background-color: var(--color-blue);
+    color: var(--color-white-fixed);
 }
 
 .button_outline:focus{
-    border-color: var(--color-grey-2);
-    background-color: var(--color-grey-2);
+    border-color: var(--color-blue);
+    background-color: var(--color-blue);
     color: var(--color-white-fixed);
 }
 
 .button_outline:active{
-    border-color: var(--color-grey-2);
-    background-color: var(--color-grey-2);
+    border-color: var(--color-blue);
+    background-color: var(--color-blue);
     color: var(--color-white-fixed);
 }
 
@@ -75,8 +76,3 @@
     height: 28px;
 }
 
-.button_disabled{
-    background-color: var(--color-gray-3);
-    color: var(--color-white-fixed);
-    border-color: var(--color-gray-3);
-}

@@ -2,7 +2,7 @@
     color: var(--color-white-fixed);
 }
 .navbar{
-    background-color: var(--color-grey-2);
+    background-color: var(--color-grey-1);
     padding: 1.75rem 0;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .navbar-link{
-    background-color: var(--color-grey-2);
+    background-color: var(--color-grey-1);
     color: var(--color-white-fixed);
     height: 2rem;
     padding: 0.5rem;

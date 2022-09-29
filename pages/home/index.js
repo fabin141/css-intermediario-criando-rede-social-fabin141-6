@@ -1,9 +1,4 @@
 const ulPosts = document.querySelector("#posts")
-// const buttonFinal = document.querySelector('#btn')
-
-// buttonFinal.addEventListener('click', function(){
-//     console.log('oi')
-// })
 
 function createPost(listaUm, listaDois){
     for(let i = 0; i < listaUm.length; i++){
@@ -102,3 +97,13 @@ function createPost(listaUm, listaDois){
 }
 
 createPost(users, posts)
+
+const buton = document.querySelector('toBeReplaced')
+
+buton.addEventListener('click', function(){
+    const paragraph = document.querySelector('modificar')
+
+    const p = document.createElement('p');
+    p.innerText = 'Seguindo';
+    return paragraph = p;
+})
