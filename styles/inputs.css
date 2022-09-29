@@ -1,0 +1,25 @@
+.input{
+    padding: 16px 20px;
+    background-color: var(--color-white-fixed);
+    border-color: var(--color-grey-3);
+    height: 52px;
+}
+
+.input:focus{
+    border-color: var(--color-grey-3);
+}
+
+.textarea{
+    height: 130px;
+    padding: 28px 21px;
+    border-color: var(--color-grey-3);
+    font-family: var(--font-family-1);
+}
+
+.textarea:focus{
+    border-color: var(--color-grey-3);
+}
+
+.placeholder{
+    color: var(--color-grey-3);
+}

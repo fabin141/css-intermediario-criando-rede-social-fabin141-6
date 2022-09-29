@@ -1,0 +1,31 @@
+.full{
+    width: 100%;
+}
+
+.half{
+    width: 50%;
+}
+
+.full_w{
+    width: 100vw;
+}
+
+.full_h{
+    height: 100vh;
+}
+
+.half_w{
+    width: 50vw;
+}
+
+.half_h{
+    height: 50;
+}
+
+.size_width-1{
+    width: 100%;
+}
+
+.size_width-2{
+    width: 100%;
+}

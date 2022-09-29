@@ -1,0 +1,57 @@
+@import "../../styles/sizes.css";
+@import "../../styles/display.css";
+
+
+.button_post{
+    height: 38px;
+    width: 69px;
+    align-self: flex-end;
+}
+
+.img_formatting{
+    width: 52px;
+    height: 52px;
+}
+
+.aside_li{
+    width: 65%;
+}
+
+.post_fullComment{
+    max-width: 100%;
+    text-align: left;
+}
+
+.post_fullComment > p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@media (max-width:386px){
+    .main_mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .position_fixed-2{
+        position: relative;
+        right: 9px;
+        bottom: 153px;
+        overflow-y: auto;
+    }
+
+    .position_post_mobile{
+        position: relative;
+        bottom: 100px;
+    }
+
+    .follower_mobile{
+        display: flex;
+        flex-direction: row;  
+    }
+
+    .half{
+        width: 100%;
+    }
+}

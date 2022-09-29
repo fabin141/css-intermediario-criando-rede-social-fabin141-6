@@ -1,0 +1,15 @@
+.border{
+    border: 3px solid;
+}
+
+.border-2{
+    border: 2px solid;
+}
+
+.border_radius-1{
+    border-radius: var(--radius-1);
+}
+
+.border_radius-2{
+    border-radius: var(--radius-2);
+}

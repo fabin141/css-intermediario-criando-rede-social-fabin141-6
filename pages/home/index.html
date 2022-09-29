@@ -1,19 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/globalStyles.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>TechPosters - Home</title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-  </body>
-  <script src="/script/database/users.js"></script>
-  <script src="/script/database/posts.js"></script>
-  <script src="/script/database/sugestUsers.js"></script>
-  <script src="index.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../../assets/img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css"/>
+  <link rel="stylesheet" href="../../styles/globalStyles.css"/>
+  <link rel="stylesheet" href="../../styles/navbar.css">
+  <link rel="stylesheet" href="../../styles/positions.css">
+  <link rel="stylesheet" href="../../styles/borders.css">
+  <link rel="stylesheet" href="../../styles/buttons.css">
+  <link rel="stylesheet" href="../../styles/bars.css">
+  <link rel="stylesheet" href="../../styles/inputs.css">
+  <link rel="stylesheet" href="../../styles/text.css">
+  <link rel="stylesheet" href="../../styles/spacing.css">
+  <link rel="stylesheet" href="../../styles/sizes.css">
+  <link rel="stylesheet" href="../../styles/display.css">
+  <link rel="stylesheet" href="../../styles/modal.css"> 
+  <title>TechPosters - Home</title>
+</head>
+<body>
+  <header class="navbar position_fixed">
+    <nav class="container navbar-items">
+      <h1 class="title-0">TechPosters</h1>
+      <button class="navbar-link">Sair</button>
+    </nav>
+  </header>
+  <main id="parentModal" class="mt_header container">
+    <div class="flex_row mt gap-4 main_mobile">
+      <section class="flex_column gap-1 half ">
+        <div class="flex_row gap-2">
+          <img class="img_formatting" src="../../assets/img/user1.svg" alt="">
+            <div class="flex_column gap-3">
+              <p class="title-2">Samuel Leão</p>
+              <p class="text-2">Front end Engineer</p>
+            </div>
+        </div>
+        <form class="flex_column gap-1">
+          <input class="input outline_none border_radius-1 border size_width-1" type="text" placeholder="Titulo do post">
+          <textarea class="textarea outline_none border_radius-1 border size_width-1" name="postComment" placeholder="Digitar descrição do Post"></textarea>
+          <button class="button border_radius-1 border-2 button_primary button_post">Postar</button>
+        </form>
+      </section>
+      <aside class="flex_column half gap-1 position_fixed-2 justify_between">
+        <h2 class="title-2 mb-2">Sugestões para você seguir</h2>
+        <ul class="follower_mobile">
+          <li class="followers_users flex_row mb justify_between aside_li">
+            <div class="flex_row gap-2">
+              <img class="img_formatting" src="../../assets/img/user2.svg" alt="">
+              <div class="flex_column gap-3">
+                <p class="title-2">Samuel Persuhn</p>
+                <p class="text-2">Front end Engineer</p>
+              </div>
+            </div>
+            <button class="button_follower button border_radius-1 border-2 button_outline">Seguir</button>
+          </li>
+          <li class=" followers_users flex_row mb justify_between aside_li">
+            <div class="flex_row gap-3">
+              <img class="img_formatting" src="../../assets/img/user3.svg" alt="">
+              <div class="flex_column gap-3">
+                <p class="title-2">Carlos Lima</p>
+                <p class="text-2">UX e UI Designer</p>
+              </div>
+            </div>
+            <button class="button_follower button border_radius-1 border-2 button_outline">Seguir</button>
+          </li>
+          <li class="followers_users flex_row mb justify_between aside_li">
+            <div class="flex_row gap-2">
+              <img class="img_formatting" src="../../assets/img/user4.svg" alt="">
+              <div class="flex_column gap-3">
+                <p class="title-2">Carla Maria</p>
+                <p class="text-2">Back end Engineer</p>
+              </div>
+            </div>
+            <button class="button_follower button border_radius-1 border-2 button_outline">Seguir</button>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <section class="half position_post_mobile">
+      <h2 class="title-1 mb-3">Posts</h2>
+      <ul id="posts" class="flex_column gap-5"></ul>
+    </section>
+  </main>
+</body>
+    <script src="../../script/database/users.js"></script>
+    <script src="../../script/database/sugestUsers.js"></script>
+    <script src="../../script/database/posts.js"></script>
+    <script src="./index.js"></script>
 </html>
+
