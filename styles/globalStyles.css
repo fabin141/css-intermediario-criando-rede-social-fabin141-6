@@ -5,6 +5,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+.toBeReplaced {
+    visibility: hidden;
+    position: relative;
+}
+.toBeReplaced:after {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "Seguindo";
+}
 
 :root{
     --color-grey-1: #212529;
