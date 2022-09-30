@@ -100,10 +100,10 @@ createPost(users, posts)
 
 const buton = document.querySelector('toBeReplaced')
 
-buton.addEventListener('click', function(){
-    const paragraph = document.querySelector('modificar')
+// buton.addEventListener('click', function(){
+//     const paragraph = document.querySelector('modificar')
 
-    const p = document.createElement('p');
-    p.innerText = 'Seguindo';
-    return paragraph = p;
-})
+//     const p = document.createElement('p');
+//     p.innerText = 'Seguindo';
+//     return paragraph = p;
+// })
